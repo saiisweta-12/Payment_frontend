@@ -1,0 +1,30 @@
+.panel-heading {
+    background:rgb(128, 128, 182);
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    margin-top: 50px;
+    padding: 40px 110px;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.login-button {
+    padding-right: 0px;
+    text-align:right;
+    margin-bottom: 30px;
+   
+}
+.bio-row{
+    padding: left;
+    text-align: left;
+}
+
+.table{
+    border: 1px solid black;
+    margin-top: 100px;
+    width: 50%;
+    height: auto;
+}

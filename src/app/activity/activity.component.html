@@ -1,0 +1,42 @@
+<br>
+<button type="button" (click)="onSubmit()" >Dashboard</button>
+<br>
+<div class = "row">
+    <div class="center col-md-10 offset-md-5">
+        <h2><span>Transaction Details</span></h2> 
+    </div>
+</div>
+<br>
+<table class="table table-success">
+  <table class="table table-hover" fgid="6150">
+        <thead fgid="6036">
+          <tr fgid="6042">
+        <th scope="col">Transaction_Id</th>
+        <th scope="col">Transfer_Date</th>
+        <th scope="col">Sender_BIC</th>
+        <th scope="col">Receiver_BIC</th>
+        <th scope="col">ReceiverAccount_No</th>
+        <th scope="col">ReceiverAccount_Name</th>
+        <th scope="col">Transfer_Amount</th>
+        <th scope="col">Transfer_Fees</th>
+        <th scope="col">Transfer_type </th>
+        <th scope="col">MessageCode</th>
+        <th scope="col">CurrencyCode</th> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of transactionsbyid" class="table-primary" fgid="6122">
+        <td>{{t.transactionid}}</td>
+        <td>{{t.transferdate}}</td>
+        <td>{{t.senderBIC.bic}}</td>
+        <td>{{t.receiverBIC.bic}}</td>
+        <td>{{t.receiveraccountholdernumber}}</td>
+        <td>{{t.receiveraccountholdername}}</td>
+        <td>{{t.inramount}}</td>
+        <td>{{t.transferfees}}</td>
+        <td>{{t.transfertypecode.transfertypecode}}</td>
+        <td>{{t.messagecode.messagecode}}</td>
+        <td>{{t.currencycode.currencycode}}</td>
+     </tr>
+    </tbody>
+  </table>
